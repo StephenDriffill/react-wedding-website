@@ -17,7 +17,7 @@ function App() {
             <li><a href="#home">Home</a></li>
             <li><a href="#itinerary">On the day</a></li>
             <li><a href="#accomodation">Accomodation</a></li> 
-            <li><a href="#taxi">Taxis</a></li>
+            <li><a href="#taxis">Taxis</a></li>
             <li><a href="#rsvp">RSVP</a></li>
           </ul>
         </div>
@@ -34,12 +34,44 @@ function App() {
       <section id="itinerary">
         <div className="section-content App__itinerary">
           <span>On the day...</span>
+
+          <span className="App__itineraryLocation">Frome Town Hall</span>
           <div className="App__itineraryContent">
-            <span>14:15</span><span>Arrive at town hall</span>
-            <span>14:30</span><span>Service</span>
+            <span>14:15</span><span>Guests arrive</span>
+            <span>14:30</span><span>Ceremony</span>
+          </div>
+
+          <span className="App__itineraryLocation">4 Weston Walk</span>
+          <div className="App__itineraryContent">
             <span>15:00</span><span>Tea and cake</span>
+          </div>
+            
+          <span className="App__itineraryLocation">Eight Stony Street</span>
+          <div className="App__itineraryContent">
             <span>19:00</span><span>Dinner</span>
           </div>
+        </div>
+      </section>
+
+      <section id="accomodation">
+        <div className="section-content App__accomodation">
+          <span>Accomodation</span>
+            <ul>
+              <li>
+                <a href="https://mikestaxifrome.com/">The Cornerhouse</a> - <a href="tel:+441373472042">01373 472042</a>
+              </li>
+            </ul>
+        </div>
+      </section>
+
+      <section id="taxis">
+        <div className="section-content App__taxis">
+          <span>Taxis</span>
+            <ul>
+              <li>
+                <a href="https://mikestaxifrome.com/">Mike Taxis</a> - <a href="tel:+447773900274">07773 900274</a>
+              </li>
+            </ul>
         </div>
       </section>
 

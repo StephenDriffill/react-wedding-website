@@ -134,6 +134,14 @@ section {
   background-image: url(itinerary.jpg);
 }
 
+#accomodation::before {
+  background-image: url(accomodation.jpg);
+}
+
+#taxis::before {
+  background-image: url(taxis.jpg);
+}
+
 #rsvp::before {
   background-image: url(rsvp.jpg);
 }
@@ -166,14 +174,44 @@ section {
 }
 
 .App__itinerary {
+  display: flex;
+  flex-direction: column;
   font-size: 2rem;
 }
 
+.App__itineraryLocation {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .App__itineraryContent {
-  margin-top: 10px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
+  font-size: 1.3rem;
+}
+
+.App__accomodation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 2rem;
+}
+
+.App__accomodation ul {
+  font-size: 1.5rem;
+}
+
+.App__taxis {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 2rem;
+}
+
+.App__taxis ul {
   font-size: 1.5rem;
 }
 
