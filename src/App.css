@@ -59,6 +59,7 @@ body {
 
 .HideAppBar__item a {
   text-decoration: none !important;
+  text-transform: uppercase;
   color: black;
 }
 
