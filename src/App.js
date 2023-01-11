@@ -50,7 +50,7 @@ function App() {
             <a href="https://goo.gl/maps/VjexHNM4AVH4DFN59" target="_blank" rel="noopener noreferrer">Frome Town Hall</a>
           </span>
           <div className="App__itineraryContent">
-            <span>14:15</span><span>Guests arrive</span>
+            <span>14:00 - 14:15</span><span>Guests arrive</span>
             <span>14:30</span><span>Ceremony</span>
           </div>
 
