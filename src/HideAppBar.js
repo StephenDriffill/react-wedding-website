@@ -70,7 +70,7 @@ export default function HideAppBar(props) {
             >
               <MenuItem className="HideAppBar__item" onClick={handleClose}><a href="#home">Home</a></MenuItem>
               <MenuItem className="HideAppBar__item" onClick={handleClose}><a href="#itinerary">On the day</a></MenuItem>
-              <MenuItem className="HideAppBar__item" onClick={handleClose}><a href="#accomodation">Accomodation</a></MenuItem>
+              <MenuItem className="HideAppBar__item" onClick={handleClose}><a href="#accommodation">Accommodation</a></MenuItem>
               <MenuItem className="HideAppBar__item" onClick={handleClose}><a href="#taxis">Taxis</a></MenuItem>
               <MenuItem className="HideAppBar__item" onClick={handleClose}><a href="#rsvp">RSVP</a></MenuItem>
             </Menu>

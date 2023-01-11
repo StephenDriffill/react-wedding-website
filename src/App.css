@@ -130,11 +130,11 @@ section {
   background-image: url(itinerary.jpg);
 }
 
-#accomodation::before {
-  background-image: url(accomodation.jpg);
+#accommodation::before {
+  background-image: url(accommodation.jpg);
 }
 
-#accomodation.xs::before {
+#accommodation.xs::before {
   left: -150px;
 }
 
@@ -194,37 +194,37 @@ section {
   font-size: 1.3rem;
 }
 
-#accomodation {
+#accommodation {
   font-size: 2rem;
 }
 
-#accomodation ul {
+#accommodation ul {
   font-size: 1.5rem;
 }
 
-#accomodation.xs ul {
+#accommodation.xs ul {
   font-size: 1rem;
 }
 
-#accomodation ul {
+#accommodation ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#accomodation li div {
+#accommodation li div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
-#accomodation.xs li div {
+#accommodation.xs li div {
   display: flex;
   flex-direction: column;
   gap: 0px;
 }
 
-.App__accomodation {
+.App__accommodation {
   display: flex;
   flex-direction: column;
   gap: 10px;

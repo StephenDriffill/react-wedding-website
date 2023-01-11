@@ -22,7 +22,7 @@ function App() {
                 <ul>
                   <li><a href="#home">Home</a></li>
                   <li><a href="#itinerary">On the day</a></li>
-                  <li><a href="#accomodation">Accomodation</a></li> 
+                  <li><a href="#accommodation">Accommodation</a></li> 
                   <li><a href="#taxis">Taxis</a></li>
                   <li><a href="#rsvp">RSVP</a></li>
                 </ul>
@@ -70,9 +70,9 @@ function App() {
         </div>
       </section>
 
-      <section id="accomodation" className={sizeClassName}>
-        <div className="section-content App__accomodation">
-          <span>Accomodation</span>
+      <section id="accommodation" className={sizeClassName}>
+        <div className="section-content App__accommodation">
+          <span>Accommodation</span>
             <ul>
               <li>
                 <div>
