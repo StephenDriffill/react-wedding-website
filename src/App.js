@@ -58,7 +58,7 @@ function App() {
             <a href="https://goo.gl/maps/tRoZHUijFRv9bbd88" target="_blank" rel="noopener noreferrer">4 Weston Walk</a>
           </span>
           <div className="App__itineraryContent">
-            <span>15:30</span><span>Tea and cake</span>
+            <span>15:30</span><span>Refreshments</span>
           </div>
             
           <span className="App__itineraryLocation">
