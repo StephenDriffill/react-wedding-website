@@ -166,6 +166,7 @@ function App() {
         <div className="section-content App__rsvp">
           <span>Please RSVP to</span>
           <span className={`App__rsvpEmail ${sizeClassName}`}><a href="mailto:ameliaandstevegettingmarried@gmail.com">ameliaandstevegettingmarried@gmail.com</a></span>
+          <span>with any dietary requirements </span>
           <span>by 31st March 2023.</span>
         </div>
       </section>
