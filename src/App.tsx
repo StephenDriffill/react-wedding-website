@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './index.css';
 import "./App.css"
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
