@@ -3,20 +3,19 @@ import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Slide from '@mui/material/Slide';
-import IconButton from '@mui/material/IconButton';
+import Slide, { SlideProps } from '@mui/material/Slide';
+import IconButton, { IconButtonProps } from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import Menu from '@mui/material/Menu';
+import Menu, { MenuProps } from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
-function HideOnScroll(props) {
-  const { children, window } = props;
-  // Note that you normally won't need to set the window ref as useScrollTrigger
-  // will default to window.
-  // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
-  });
+export interface HideOnScrollProps  { 
+  children: SlideProps['children']
+}
+
+function HideOnScroll({children}: HideOnScrollProps) {
+
+  const trigger = useScrollTrigger();
 
   return (
     <Slide appear={false} direction="down" in={!trigger}>
@@ -34,10 +33,10 @@ HideOnScroll.propTypes = {
   window: PropTypes.func,
 };
 
-export default function HideAppBar(props) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+export default function HideAppBar() {
+  const [anchorEl, setAnchorEl] = React.useState<MenuProps['anchorEl']>(null);
   const open = Boolean(anchorEl);
-  const handleClick = (event) => {
+  const handleClick: IconButtonProps['onClick'] = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
@@ -46,7 +45,7 @@ export default function HideAppBar(props) {
 
   return (
     <div className='HideAppBar'>
-      <HideOnScroll {...props}>
+      <HideOnScroll>
         <AppBar>
           <Toolbar>
             <IconButton
