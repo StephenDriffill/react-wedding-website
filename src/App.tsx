@@ -3,11 +3,11 @@ import './index.css';
 import "./App.css"
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import HideAppBar from "./Components/HideAppBar";
-import { Section } from './Components/Section';
-import { Itinerary } from './Components/Itinerary';
-import { Accommodation } from './Components/Accommodation';
-import { Taxis } from './Components/Taxis';
+import HideAppBar from "./rcomponents/HideAppBar";
+import { Section } from './rcomponents/Section';
+import { Itinerary } from './rcomponents/Itinerary';
+import { Accommodation } from './rcomponents/Accommodation';
+import { Taxis } from './rcomponents/Taxis';
 
 const menuItems = [
   { href: "#home", name: "Home" },
