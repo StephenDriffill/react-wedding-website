@@ -41,28 +41,6 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-.HideAppBar {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-
-.HideAppBar header {
-  color: black;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.HideAppBar__item {
-  font-family: "Courgette" !important;
-  text-decoration: none !important;
-}
-
-.HideAppBar__item a {
-  text-decoration: none !important;
-  text-transform: uppercase;
-  color: black;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -97,65 +75,15 @@ body {
   color: black;
 }
 
-section::before {
-  content: "";
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.7;
-}
-
-section {
-  position: relative;
-  display: flex;
-  width: 100%;
-  min-height: 100vh;
-  padding: 40px;
-  align-items: center;
-  justify-content: center;
-  scroll-snap-align: center;
-}
-
 #home::before {
   background-image: url(home.jpg);
 }
 
-#home.xs::before {
+#home.Home--xs::before {
   left: -200px;
 }
 
-#itinerary::before {
-  background-image: url(itinerary.jpg);
-}
-
-#accommodation::before {
-  background-image: url(accommodation.jpg);
-}
-
-#accommodation.xs::before {
-  left: -150px;
-}
-
-#taxis::before {
-  background-image: url(taxis.jpg);
-}
-
-#rsvp::before {
-  background-image: url(rsvp.jpg);
-}
-
-.section-content {
-  position: relative;
-  background: rgba(255, 255, 255, 0.4);
-  padding: 20px;
-  border-radius: 0px 20px;
-  box-shadow: 2px 2px rgb(255 255 255 / 60%);
-}
-
-.App__headline {
+.Home .Section__content {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -163,111 +91,23 @@ section {
   font-size: 1.5rem;
 }
 
-.App__headlineName {
+.Home__name {
   font-size: 1.9rem;
 }
 
-.App__headlineDate {
+.Home__date {
   font-size: 2.5rem;
 }
 
-.App__headlineLocation {
+.Home__location {
   font-size: 1.5rem;
 }
 
-.App__itinerary {
-  display: flex;
-  flex-direction: column;
-  font-size: 2rem;
+#rsvp::before {
+  background-image: url(rsvp.jpg);
 }
 
-.App__itineraryLocation {
-  margin-top: 30px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.App__itineraryContent {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  font-size: 1.3rem;
-}
-
-#accommodation {
-  font-size: 2rem;
-}
-
-#accommodation ul {
-  font-size: 1.5rem;
-}
-
-#accommodation.xs ul {
-  font-size: 1rem;
-}
-
-#accommodation ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#accommodation li div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-#accommodation.xs li div {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-}
-
-.App__accommodation {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#taxis {
-  font-size: 2rem;
-}
-
-#taxis ul {
-  font-size: 1.5rem;
-}
-
-#taxis.xs ul {
-  font-size: 1rem;
-}
-
-#taxis ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#taxis li div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-#taxis.xs li div {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-}
-
-.App__taxis {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.App__rsvp {
+.Rsvp .Section__content {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -275,6 +115,6 @@ section {
   font-size: 1.5rem;
 }
 
-.App__rsvpEmail.xs {
+.Rsvp__email--xs {
   font-size: 0.9rem;
 }

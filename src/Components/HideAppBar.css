@@ -1,0 +1,21 @@
+.HideAppBar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.HideAppBar header {
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.HideAppBar__item {
+  font-family: "Courgette" !important;
+  text-decoration: none !important;
+}
+
+.HideAppBar__item a {
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: black;
+}

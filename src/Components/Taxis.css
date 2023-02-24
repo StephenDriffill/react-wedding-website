@@ -1,0 +1,36 @@
+#taxis::before {
+  background-image: url(taxis.jpg);
+}
+
+#taxis {
+  font-size: 2rem;
+}
+
+.Taxis .Section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Taxis ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.Taxis--xs ul {
+  font-size: 1rem;
+}
+
+.Taxis li div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.Taxis--xs li div {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}

@@ -1,0 +1,40 @@
+#accommodation::before {
+  background-image: url(accommodation.jpg);
+}
+
+#accommodation.Accommodation--xs::before {
+  left: -150px;
+}
+
+.Accommodation {
+  font-size: 2rem;
+}
+
+.Accommodation .Section__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Accommodation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.Accommodation--xs ul {
+  font-size: 1rem;
+}
+
+.Accommodation li div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.Accommodation--xs li div {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}

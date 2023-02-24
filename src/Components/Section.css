@@ -1,0 +1,29 @@
+.Section::before {
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.7;
+}
+  
+.Section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+}
+
+.Section__content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 20px;
+  border-radius: 0px 20px;
+  box-shadow: 2px 2px rgb(255 255 255 / 60%);
+}
