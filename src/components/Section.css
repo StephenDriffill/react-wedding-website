@@ -8,7 +8,7 @@
   left: 0px;
   opacity: 0.7;
 }
-  
+
 .Section {
   position: relative;
   display: flex;
@@ -22,8 +22,8 @@
 
 .Section__content {
   position: relative;
-  background: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
   padding: 20px;
   border-radius: 0px 20px;
-  box-shadow: 2px 2px rgb(255 255 255 / 60%);
 }

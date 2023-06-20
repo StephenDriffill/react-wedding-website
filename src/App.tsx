@@ -8,12 +8,14 @@ import { Section } from './components/Section';
 import { Itinerary } from './components/Itinerary';
 import { Accommodation } from './components/Accommodation';
 import { Taxis } from './components/Taxis';
+import { Parking } from './components/Parking';
 
 const menuItems = [
   { href: "#home", name: "Home" },
   { href: "#itinerary", name: "On the day" },
   { href: "#accommodation", name: "Accommodation" },
   { href: "#taxis", name: "Taxis" },
+  { href: "#parking", name: "Parking" },
   { href: "#rsvp", name: "RSVP" },
 ]
 
@@ -55,6 +57,7 @@ function App() {
       <Itinerary/>
       <Accommodation sizeClassName={sizeClassName}/>
       <Taxis sizeClassName={sizeClassName}/>
+      <Parking sizeClassName={sizeClassName}/>
 
       <Section id="rsvp" className='Rsvp'>
         <span>Please RSVP to</span>
